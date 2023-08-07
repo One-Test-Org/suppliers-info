@@ -1,0 +1,35 @@
+<!--[if lte IE 8]><link href="/public/stylesheets/application-ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
+<!--[if gt IE 8]><!--><link href="/public/stylesheets/application.css" media="all" rel="stylesheet" type="text/css" /><!--<![endif]-->
+<!--
+{% for stylesheetUrl in extensionConfig.stylesheets %}
+  <link href="{{ stylesheetUrl }}" rel="stylesheet" type="text/css" />
+{% endfor %}
+-->
+
+{%- from "moj/components/header/macro.njk" import mojHeader -%}
+
+{{ mojHeader({
+  logotype: crown,
+  organisationLabel: {
+    text: 'GOV.UK',
+    href: '#'
+  },
+
+  serviceLabel: {
+    text: 'Supplier`s Information',
+    href: '#'
+  },
+  
+  navigation: {
+    label: 'Account navigation',
+    items: [{
+      text: 'Account name',
+      href: '#',
+      active: true
+    }, {
+      text: 'Sign out',
+      href: '#'
+    }]
+  }
+
+}) }}
