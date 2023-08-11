@@ -18,3 +18,36 @@ $govuk-assets-path: '/govuk/assets/';
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
 
 
+/* ==========================================================================
+   #MASTHEAD
+   ========================================================================== */
+
+   .moj-mast-small {
+    background-color: govuk-colour("blue");
+    color: govuk-colour("white");   
+    height: 180px;
+  }
+  
+  .moj-mast-small__container {
+   
+    font-size: 0; // Hide whitespace between elements
+    text-align: justify; // Trick to remove the need for floats
+  
+    &:after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+    }
+  
+  }
+  
+    .moj-mast-small__content {
+        display: inline-block;
+        font-size: 46px;
+        text-align: left;
+        vertical-align: middle;
+        width: 100%;
+        font-family: "GDS Transport",Arial, Helvetica, sans-serif;
+        color: white;
+    }
+  

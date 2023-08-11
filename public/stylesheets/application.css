@@ -13211,3 +13211,32 @@ span.moj-header__link:hover {
     margin-bottom: 0;
   }
 }
+
+/* ==========================================================================
+   #MASTHEAD
+   ========================================================================== */
+.moj-mast-small {
+  background-color: #1d70b8;
+  color: #ffffff;
+  height: 180px;
+}
+
+.moj-mast-small__container {
+  font-size: 0;
+  text-align: justify;
+}
+.moj-mast-small__container:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+
+.moj-mast-small__content {
+  display: inline-block;
+  font-size: 46px;
+  text-align: left;
+  vertical-align: middle;
+  width: 100%;
+  font-family: "GDS Transport", Arial, Helvetica, sans-serif;
+  color: white;
+}

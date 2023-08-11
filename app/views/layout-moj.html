@@ -42,26 +42,6 @@
 
 {% block header %}
   
-{%- from "moj/components/primary-navigation/macro.njk" import mojPrimaryNavigation -%}
-
-{{ mojPrimaryNavigation({
-  label: 'Primary navigation',
-  items: [
-    {
-      text: 'MoJ style',
-      href: '#1',
-      active: true
-    },
-    {
-      text: 'GDS style',
-      href: '/index'
-    },
-    {
-      text: 'NQC style',
-      href: '#3'
-    }
-  ]
-}) }}
 
 {% endblock %}
 

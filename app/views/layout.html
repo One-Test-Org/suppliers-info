@@ -33,7 +33,8 @@
 {% from "govuk/components/warning-text/macro.njk"        import govukWarningText %}
 
 {% block head %}
-  {% include "includes/head.html" %}
+  {% include "includes/head-moj.html" %}
+  
 {% endblock %}
 
 {% block pageTitle %}
@@ -42,13 +43,15 @@
 
 {% block header %}
   
-{% from "govuk/components/header/macro.njk" import govukHeader %}
+<div class="moj-mast-small">
 
-{{ govukHeader({
-  homepageUrl: "#",
-  serviceName: "Supplier`s information",
-  serviceUrl: "#"
-}) }}
+<div class="moj-mast-small__content">
+    <div class="govuk-width-container">
+        <h1 class="govuk-heading-xl" style="color:white; padding-top: 50px;">Supplier`s Register</h1>
+    </div>
+
+</div>
+
 
 {% endblock %}
 
