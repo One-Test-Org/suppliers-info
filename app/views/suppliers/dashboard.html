@@ -1,5 +1,4 @@
 {% extends "layout.html" %}
-{% set navActive = "drafts" %}
 
 {% block pageTitle %}
 Supplier`s information - GOV.UK
@@ -9,7 +8,18 @@ Supplier`s information - GOV.UK
 
 {% block beforeContent %}
 
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      Prototype
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a prototype of a service in development.
+  </p>
+</div>
+
 {% endblock %}
+
 
 {% block content %}
 
@@ -36,8 +46,8 @@ Supplier`s information - GOV.UK
           Ensure your Supplier information are complete and up to date
         </dt>
         <dd class="govuk-summary-list__actions">
-          <a class="govuk-link" href="#">
-            Edit<span class="govuk-visually-hidden"> Edit</span>
+          <a class="govuk-link" href="/suppliers/non-individual-core-data">
+            View<span class="govuk-visually-hidden"> View</span>
           </a>
         </dd>
       </div>
@@ -65,7 +75,7 @@ Supplier`s information - GOV.UK
         </dt>
         <dd class="govuk-summary-list__actions">
           <a class="govuk-link" href="#">
-            Edit<span class="govuk-visually-hidden"> Edit</span>
+            View<span class="govuk-visually-hidden"> View</span>
           </a>
         </dd>
       </div>
@@ -75,7 +85,7 @@ Supplier`s information - GOV.UK
         </dt>
         <dd class="govuk-summary-list__actions">
           <a class="govuk-link" href="#">
-            Edit<span class="govuk-visually-hidden"> Edit</span>
+            View<span class="govuk-visually-hidden"> View</span>
           </a>
         </dd>
       </div>
@@ -97,7 +107,7 @@ Supplier`s information - GOV.UK
         </dt>
         <dd class="govuk-summary-list__actions">
           <a class="govuk-link" href="#">
-            Edit<span class="govuk-visually-hidden"> Edit</span>
+            View<span class="govuk-visually-hidden"> View</span>
           </a>
         </dd>
       </div>
@@ -105,26 +115,7 @@ Supplier`s information - GOV.UK
   </div>
 </div>
 
-    <div class="govuk-grid-row">
-      <div class="govuk-grid-column-ful-width">
-  
-        <h2 class="govuk-heading-l" style="color: #1d70b8;">
-          Manage User Documents
-        </h2>
-
-        <dl class="govuk-summary-list">
-        <div class="govuk-summary-list__row">
-          <dt class="govuk-summary-list__value">
-            Ensure your Connected persons are complete and up to date
-          </dt>
-          <dd class="govuk-summary-list__actions">
-            <a class="govuk-link" href="#">
-              Edit<span class="govuk-visually-hidden"> Edit</span>
-            </a>
-          </dd>
-        </div>
-        </dl>
-    </div>
+   
   </div>
 {% endblock %}
 
